@@ -43,7 +43,7 @@ const About = () => {
                           <p>Computer Science <em>(Currently running the program)</em></p>
                       </div>
                   </div>
-                  <a href='ss'>
+                  <a href='Tobiloba_cv.pdf' download='Tobiloba_cv.pdf'>
                     <div className='Btn Download'>
                       <div className='Flow'></div>
                       <p className='More_btn'>Download Resume</p>

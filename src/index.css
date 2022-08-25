@@ -326,7 +326,9 @@ a{
 .About_Container{
   align-items: flex-start;
   justify-content: flex-start;
-  
+}
+.Download{
+  width: 250px;
 }
 
 
