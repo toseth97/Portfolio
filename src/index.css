@@ -149,6 +149,7 @@ a{
   text-transform: uppercase;
   color: var(--yellow_back);
   font-size: 3.5rem;
+  margin-bottom: 2rem;
   /* font-weight: bolder; */
 }
 .Typewriter{
@@ -330,7 +331,77 @@ a{
 .Download{
   width: 250px;
 }
+.text_color{
+  color: var(--yellow_back);
+}
 
+
+
+/* Portfolio */
+.Portfolio_split{
+  width: 100%;
+}
+.All_portfolio{
+  display: flex;
+  align-items: center;
+  flex-basis: content;
+  justify-content: space-around;
+  gap: .5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Each_portfolio{
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Portfolio_img{
+  width: 100%;
+  height: 200px;
+}
+.Img_shade{
+  width: 600%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.377);
+  height: 300px;
+}
+.Portfolio_desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  bottom: -100%;
+  right: 0;
+  opacity: 0;
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  height: 310px;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.Each_portfolio:hover .Portfolio_desc , .Each_portfolio:focus .Portfolio_desc{
+  bottom: 0;
+  opacity: 1;
+}
+.Each_portfolio:hover>.Img_shade{
+  background-color: #000000e8;
+}
+
+.Portfolio_desc h1{
+  margin-bottom: 1rem;
+}
+.Portfolio_desc a{
+  padding: .5rem 2rem;
+  margin-top: 1rem;
+  background-color: var(--yellow_back);
+  border-radius: 10px;
+}
 
 
 
@@ -459,6 +530,37 @@ a{
   .Btn p{
     margin-left: 0;
   }
+  .Each_portfolio{
+    width: 90%;  
+  }
+  .Portfolio_img{
+    height: 150px;
+  }
+  .Img_shade{
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 300px;
+  }
+  .Portfolio_desc{
+    bottom: 0;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .Img_shade{
+    background-color: rgba(0, 0, 0, 0.832);
+  }
+  .All_portfolio{
+    display: flex;
+    align-items: center;
+    flex-basis: content;
+    justify-content: space-around;
+    gap: .5rem;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: none;
+  }
   
 
 
@@ -521,10 +623,28 @@ a{
   .Download p{
     margin-left: 20px;
   }
+  .Portfolio_desc h1{
+    margin-bottom: .5rem;
+    font-size: 1rem;
+  }
+  .Portfolio_desc em{
+    font-size: .8rem;
+  }
+  .Portfolio_desc a{
+    padding: .2rem 2rem;
+    margin-top: .5rem;
+    background-color: var(--yellow_back);
+    border-radius: 10px;
+    
+  }
 }
 @media screen and (max-width:380px){
   .Img_div{
     width:200px;
     height: 200px;
+  }
+
+  .About_sub{
+    width: 100%;
   }
 }

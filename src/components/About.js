@@ -13,7 +13,7 @@ const About = () => {
                       <div>
                           RESUME
                       </div>
-                      <h1>ABOUT ME</h1>
+                      <h1>ABOUT <span className='text_color'>ME</span></h1>
                   </div>
                   <div className='Resume_split'>
                       <div className='Split_one split'>
