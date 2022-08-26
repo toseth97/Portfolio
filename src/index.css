@@ -670,9 +670,10 @@ a{
   .Contact_body{
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
   .Contact_info, .Contact_mail{
-    width: 95%;
+    width: 100%;
   }
   .Contact_info h1{
     text-align: center;
@@ -692,6 +693,11 @@ a{
     padding: 0 2rem 0 ;
     flex-direction: column;
   }
+  .Form_div{
+    flex-direction: column;
+    gap: 0;
+  }
+ 
 
 
 

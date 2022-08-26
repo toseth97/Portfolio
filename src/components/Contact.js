@@ -26,7 +26,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='Mobile_info'>
-                            <i class='bx bxs-envelope-open info_icon' ></i>
+                            <i className='bx bxs-envelope-open info_icon' ></i>
                             <div>
                                 <h3>Mail me</h3>
                                 <em>oluwasheun9721@gmail.com</em> 
@@ -59,7 +59,7 @@ const Contact = () => {
                         <label className='label' htmlFor='message'>Your Name</label>
                         <textarea id='message' type='text' required placeholder='Your Message'/>
                     </div>
-                    <div className='Btn Download'>
+                    <div className='Btn Download Send'>
                             <div className='Flow'></div>
                             <p className='More_btn'>Send Message</p>
                             <i className='bx bxl-telegram Link' ></i>
