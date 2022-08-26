@@ -3,71 +3,72 @@ import Typewriter from 'typewriter-effect';
 
 const Contact = () => {
   return (
-    <main className='Parent'>
-        <div className='Yellow_bg bgd'></div>
-        <div className='Black_bg bgd'></div>
+    <main className='Contact_parent'>
         <div className='Black_slide bgd'></div>
-        <div className='Container Block'>
-            <div className='Img_div'>
-                <img className='User_img' src='./tobi_test.png' alt='User' />
-            </div>
-            <div className='Content'>
-                <h1 className='Intro_name'>-  i'm tobiloba lawal</h1>
-                <div className='Typewriter'>
-                    <Typewriter
-                    options={{
-                    strings: ['Front-End Developer', 'Student @ ALX SE', 'Coding Enthusiast'],
-                    autoStart: true,
-                    loop: true,
-                    }}
-                />
+        <div className='Contact_container'>
+            <div className='Resume_header'>
+                <div>
+                    CONTACT
                 </div>
-                <p>
-                I'm a Nigerian-based web developer and front‑end engineer focused on creating clean and user‑friendly interfaces, I am enthusiastic about building great programming that improves the lives of everyone around me.
-                </p>
-                <div className='Btn'>
-                    <div className='Flow'></div>
-                    <p className='More_btn'> More about me</p>
-                    <i className='bx bx-chevrons-right Link'></i>
-                </div>
-                
+                <h1>GET IN <span className='text_color'>TOUCH</span></h1>
             </div>
+            <div className='Contact_body'>
+                <div className='Contact_info'>
+                    <h1>Don't be shy!</h1>
+                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <section className="contact_section">
+                        <div className='Mobile_info'>
+                            <i className='bx bxs-phone info_icon'></i>
+                            <div>
+                                <h3>Call me</h3>
+                                <em>+2348120272000 | +2348063860181</em>
+                                
+                            </div>
+                        </div>
+                        <div className='Mobile_info'>
+                            <i class='bx bxs-envelope-open info_icon' ></i>
+                            <div>
+                                <h3>Mail me</h3>
+                                <em>oluwasheun9721@gmail.com</em> 
+                            </div>
+                        </div>
+                    </section>
+                    <div className='Social_links'>
+                        <a href=''><i className='bx bxl-github social' ></i></a>
+                        <a href=''><i className='bx bxl-linkedin social' ></i></a>
+                        <a href=''><i className='bx bxl-twitter social' ></i></a>
+                        <a href=''><i className='bx bxl-whatsapp social' ></i></a>
+                    </div>
+                </div>
+                <form className='Contact_mail'>
+                    <div className='Form_div'>
+                        <div className='Input_div'>
+                            <label className='label' htmlFor='name'>Your Name</label>
+                            <input id='name' type='text' required placeholder='Your Name'/>
+                        </div>
+                        <div className='Input_div'> 
+                            <label className='label' htmlFor='email'>Your Email</label>
+                            <input id='email' type='email' required placeholder='Your Email'/>
+                        </div>
+                    </div>
+                    <div className='Input_div'>
+                        <label className='label' htmlFor='subject'>Your Subject</label>
+                        <input id='subject' type='text' placeholder='Your Subject'/>
+                    </div>
+                    <div className='Input_div textarea'>
+                        <label className='label' htmlFor='message'>Your Name</label>
+                        <textarea id='message' type='text' required placeholder='Your Message'/>
+                    </div>
+                    <div className='Btn Download'>
+                            <div className='Flow'></div>
+                            <p className='More_btn'>Send Message</p>
+                            <i className='bx bxl-telegram Link' ></i>
+                        </div>
+                </form>
+            </div>
+
         </div>
-        <section className='Home_resume'>
-            <div className='Resume_main'>
-                <i className='bx bx-x close'></i>
-                    <div className='Resume_header'>
-                        <div>
-                            RESUME
-                        </div>
-                        <h1>ABOUT ME</h1>
-                    </div>
-                    <div className='Resume_split'>
-                        <div className='Split_one split'>
-                            <h3>Personal Info</h3>
-                            <div className='Personal_info'>
-                                <p className='title'>First Name: <span>Tobiloba</span></p>
-                                <p className='title'>Last Name: <span>Lawal</span></p>
-                                <p className='title'>Nationality: <span>Nigerian</span></p>
-                                <p className='title'>Location: <span>Oyo State, Nigeria.</span></p>
-                                <p className='title'>Phone No: <span>+234 8120272000</span></p>
-                                <p className='title'>Email: <span>oluwasheun9721@gmail.com</span></p>
-                                <p className='title'>Freelancing: <span>Available</span></p>
-                                <p className='title'>Collaboration: <span>Available</span></p>
-                            </div>
-                        </div>
-                        <div className='Split_two split'>
-                            <h3>Skills</h3>
-                            <div className='Skills_info'>
-                                <i className='bx bxl-html5 html Icon_bg' ></i>
-                                <i className='bx bxl-css3 css Icon_bg' ></i>
-                                <i className='bx bxl-javascript js Icon_bg'></i>
-                                <i className='bx bxl-react react Icon_bg' ></i>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </section>
+            
     </main>
   )
 }

@@ -19,7 +19,7 @@ html, body, #root, .App, .Parent,.Container, .Home_resume{
   width: 100%;
   height: 100vh;
 }
-.Container, .About_page, .Parent, .Content, .App, .Navigation, .Nav_links,.Home_resume,.Resume_main, .Resume_header,.Resume_split{
+.Container, .About_page, .Parent, .Content, .App, .Navigation, .Nav_links,.Home_resume,.Resume_main, .Resume_header,.Resume_split, .Contact_parent{
   display: flex;
   align-items: center;
 }
@@ -163,7 +163,7 @@ a{
   text-align: center;
 }
 .Btn{
-  margin-top: 4rem;
+  margin-top: 2rem;
   width: 13rem;
   border: 1px solid var(--yellow_back);
   border-radius: 30px;
@@ -404,7 +404,107 @@ a{
 }
 
 
+/* CONTACT */
 
+
+.Contact_parent{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  background-color: var(--background);
+  overflow: hidden;
+  padding: 10rem 0 0;
+}
+.Contact_container, .Contact_body, .Form_div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.Contact_container{
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(10%);
+  animation: Slide_up .5s ease-in-out forwards;
+  animation-delay: .2s;
+  
+}
+.Contact_body{
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.Contact_info{
+  width: 40%;
+}
+.Contact_mail{
+  width: 100%;
+}
+
+.Contact_info p{
+  margin: 1rem 0;
+}
+.Mobile_info{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.info_icon{
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: 50%;
+  color: var(--black);
+  background-color: var(--yellow_back);
+  margin-right: 1rem;
+}
+.Social_links{
+  margin-top: 2rem;
+}
+.social{
+  font-size: 2rem;
+  padding: .5rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  color: var(--yellow_back);
+  background-color: #ffffff0e;
+}
+.social:hover{
+  transform: translateY(-5px);
+}
+.Input_div{
+  width: 100%;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+}
+.Input_div label{
+  position: absolute;
+  left: 99999999px;
+  opacity: .7;
+}
+.Input_div input, .Input_div textarea{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: .3rem 2rem ;
+  font-size: 1.1rem;
+  background-color: #ffffff08;
+}
+
+.textarea, .textarea textarea{
+  height: 200px;
+}
+.Form_div{
+  gap: 3rem;
+  justify-content: space-between;
+}
 
 
 
@@ -559,7 +659,39 @@ a{
     flex-direction: column;
     flex-wrap: none;
   }
-  
+  .Contact_parent{
+    padding: 0;
+  }
+  .Contact_container{
+    width: 95%;
+    padding-top: 8rem;
+    overflow: scroll;
+  }
+  .Contact_body{
+    flex-direction: column;
+    width: 100%;
+  }
+  .Contact_info, .Contact_mail{
+    width: 95%;
+  }
+  .Contact_info h1{
+    text-align: center;
+  }
+  .info_icon{
+    font-size: 1.5rem;
+  }
+  .Social_links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .contact_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 0 ;
+    flex-direction: column;
+  }
 
 
 
