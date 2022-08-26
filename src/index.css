@@ -543,14 +543,12 @@ a{
     height: 300px;
   }
   .Portfolio_desc{
-    bottom: 0;
+    bottom: -200%;
     opacity: 1;
     width: 100%;
     text-align: center;
   }
-  .Img_shade{
-    background-color: rgba(0, 0, 0, 0.832);
-  }
+  
   .All_portfolio{
     display: flex;
     align-items: center;
