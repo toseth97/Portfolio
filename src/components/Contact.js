@@ -1,7 +1,15 @@
-import React from 'react'
-import Typewriter from 'typewriter-effect';
+import React, { useState } from 'react'
+
+
 
 const Contact = () => {
+    const [emailInfo, setEmailInfo]  = useState({
+        name:'',
+        email:'',
+        subject:'',
+        message:'',
+    })    
+    console.log(emailInfo)
   return (
     <main className='Contact_parent'>
         <div className='Black_slide bgd'></div>
@@ -34,36 +42,44 @@ const Contact = () => {
                         </div>
                     </section>
                     <div className='Social_links'>
-                        <a href=''><i className='bx bxl-github social' ></i></a>
-                        <a href=''><i className='bx bxl-linkedin social' ></i></a>
-                        <a href=''><i className='bx bxl-twitter social' ></i></a>
-                        <a href=''><i className='bx bxl-whatsapp social' ></i></a>
+                        <a href='https://github.com/toseth97' target="_blank" rel="noreferrer"><i className='bx bxl-github social' ></i></a>
+                        <a href='https://www.linkedin.com/in/tobiloba-lawal-1097a6132/' rel="noreferrer" target='_blank'><i className='bx bxl-linkedin social' ></i></a>
+                        <a href='https://twitter.com/Toseth_official' rel="noreferrer" target='_blank'><i className='bx bxl-twitter social' ></i></a>
+                        <a href='https://wa.me/+2348120272000' rel="noreferrer" target='_blank'><i className='bx bxl-whatsapp social' ></i></a>
                     </div>
                 </div>
-                <form className='Contact_mail'>
+                <form className='Contact_mail' >
                     <div className='Form_div'>
                         <div className='Input_div'>
                             <label className='label' htmlFor='name'>Your Name</label>
-                            <input id='name' type='text' required placeholder='Your Name'/>
+                            <input id='name' type='text' required placeholder='Your Name' value={emailInfo.name} onChange={(event) => setEmailInfo(current => ({
+                                ...current, name: event.target.value
+                            }))}/>
                         </div>
                         <div className='Input_div'> 
                             <label className='label' htmlFor='email'>Your Email</label>
-                            <input id='email' type='email' required placeholder='Your Email'/>
+                            <input id='email' type='email' required placeholder='Your Email' value={emailInfo.email} onChange={(event) => setEmailInfo(current => ({
+                                ...current, email: event.target.value
+                            }))}/>
                         </div>
                     </div>
                     <div className='Input_div'>
                         <label className='label' htmlFor='subject'>Your Subject</label>
-                        <input id='subject' type='text' placeholder='Your Subject'/>
+                        <input id='subject' type='text' placeholder='Your Subject' value={emailInfo.subject} onChange={(event) => setEmailInfo(current => ({
+                                ...current, subject: event.target.value
+                            }))}/>
                     </div>
                     <div className='Input_div textarea'>
                         <label className='label' htmlFor='message'>Your Name</label>
-                        <textarea id='message' type='text' required placeholder='Your Message'/>
+                        <textarea id='message' type='text' required placeholder='Sorry, mail service is not configured, feel free to reach me via my personal email or my social_links' value={emailInfo.message} onChange={(event) => setEmailInfo(current => ({
+                                ...current, message: event.target.value
+                            }))}/>
                     </div>
-                    <div className='Btn Download Send'>
+                    <button className='Btn Download Send'>
                             <div className='Flow'></div>
                             <p className='More_btn'>Send Message</p>
                             <i className='bx bxl-telegram Link' ></i>
-                        </div>
+                        </button>
                 </form>
             </div>
 
