@@ -39,7 +39,7 @@ const About = () => {
                                     <i className='bx bxl-react react Icon_bg' ></i>
                                 </div>
                                 <h3>Education</h3>
-                                <h4>Bachelor Degree - University of Ibadan - 2026</h4>
+                                <h5>Bachelor Degree - University of Ibadan - 2026</h5>
                                 <p>Computer Science <em>(Currently running the program)</em></p>
                             </div>
                         </div>

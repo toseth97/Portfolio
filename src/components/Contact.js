@@ -28,7 +28,7 @@ const Contact = () => {
                         <div className='Mobile_info'>
                             <i className='bx bxs-phone info_icon'></i>
                             <div>
-                                <h3>Call me</h3>
+                                <h4>Call me</h4>
                                 <em>+2348120272000 | +2348063860181</em>
                                 
                             </div>
@@ -36,7 +36,7 @@ const Contact = () => {
                         <div className='Mobile_info'>
                             <i className='bx bxs-envelope-open info_icon' ></i>
                             <div>
-                                <h3>Mail me</h3>
+                                <h4>Mail me</h4>
                                 <em>oluwasheun9721@gmail.com</em> 
                             </div>
                         </div>
