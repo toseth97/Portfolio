@@ -37,6 +37,8 @@ const About = () => {
                                     <i className='bx bxl-css3 css Icon_bg' ></i>
                                     <i className='bx bxl-javascript js Icon_bg'></i>
                                     <i className='bx bxl-react react Icon_bg' ></i>
+                                    <i class='bx bxl-nodejs node Icon_bg'></i>
+                                    <i class='bx bxl-mongodb node Icon_bg' ></i>
                                 </div>
                                 <h3>Education</h3>
                                 <h5>Bachelor Degree - University of Ibadan - 2026</h5>

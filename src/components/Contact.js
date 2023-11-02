@@ -3,6 +3,19 @@ import React, { useState } from 'react'
 
 
 const Contact = () => {
+
+    // const transporter = nodemailer.createTransport({
+    //     host: 'smtp.gmail.com',
+    //     port: 465,
+    //     secure: true,
+    //     auth: {
+    //       user: process.env.EMAIL_USER,
+    //       pass: process.env.EMAIL_PWD,
+    //     },
+    //   });
+
+
+
     const [emailInfo, setEmailInfo]  = useState({
         name:'',
         email:'',
@@ -75,7 +88,7 @@ const Contact = () => {
                                 ...current, message: event.target.value
                             }))}/>
                     </div>
-                    <button className='Btn Download Send'>
+                    <button className='Btn Download Send' type='submit'>
                             <div className='Flow'></div>
                             <p className='More_btn'>Send Message</p>
                             <i className='bx bxl-telegram Link' ></i>

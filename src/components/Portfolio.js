@@ -5,31 +5,41 @@ const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
-      img: 'ecomms.png',
-      title: 'E-commerce website',
-      desc: 'Order products from the comfort of your home',
-      link: 'https://first-ecommerce-theta.vercel.app/'
+      title: 'Fund Fortress Online Banking',
+      desc: 'An emulation of an online banking with transaction functionalities',
+      link: 'https://fund-fortress-frontend.vercel.app/',
+      git: "https://github.com/toseth97/fund_fortress_frontend",
+      back:"https://github.com/toseth97/I4G-FCMB"
     },
+
     {
       id: 2,
-      img: 'inc_state.png',
-      title: 'Income Statement',
-      desc: 'Track all expense in line with your income',
-      link: 'https://incomestatement-by-tobiloba.netlify.app/'
+      title: 'IT Support Helpdesk',
+      desc: 'This is a software that helps businesses provide technical support to employees and customers',
+      link: 'https://it-support-ticket.pages.dev/', 
+      git:"https://github.com/toseth97/it_support_ticket"
+
     },
     {
       id: 3,
-      img: 'shoplify.png',
-      title: 'Shoplify App',
-      desc: 'Create a purchase list so that you won\'t forget things to buy',
-      link: 'https://shoplify-by-tobiloba.netlify.app/'
+      title: 'Simple NotePad',
+      desc: 'A simple note pad where a user can have different note and each note can have multiple tabs. ',
+      link: 'https://tobilobadevnote.onrender.com/',
+      git:"https://github.com/toseth97/notePad"
+    },
+    
+    {
+      id:4 ,
+      title: 'Intell Automated Solutions',
+      desc: 'A clients Landing page',
+      link:"https://www.intellautomatedsystems.com/#home",
+      Git: 'https://github.com/toseth97/intellAuto/tree/main/frontend/intellauto'
     },
     {
-      id: 4,
-      img: 'thesis.png',
-      title: 'Fellowship website',
-      desc: 'Care to join our gathering?',
-      link: 'https://thesssi.netlify.app/'
+      id: 5,
+      title: 'HeCodes Commerce space',
+      desc: 'A simple Ecommerce app with only frontend functionality',
+      link: 'https://first-ecommerce-theta.vercel.app/'
     },
   ]
   return (
@@ -38,20 +48,15 @@ const Portfolio = () => {
       <div className='Black_bg bgd'></div>
       <div className='Black_slide bgd'></div>
       <div className='Container Block About_Container'>
-      <section className='About_page'>
-          <div className='Resume_main About_sub'>
-                  <div className='Resume_header'>
-                      <div>
-                          WORKS
-                      </div>
-                      <h1>MY <span className='text_color'>PORTFOLIO</span></h1>
-                  </div>
-                  <div className='Portfolio_split'>
-                    <div className='All_portfolio'>
-                        {portfolio.map(item => <EachPortfolio item = {item} key = {item.id} />)}
-                    </div>
-                  </div>
-                  
+      <section className='About_page flex flex-col items-center pt-8 pb-8'>
+          <div className='w-full lg:w-10/12  rounded-lg bg-black'>
+            <h1 className='text-center text-5xl font-bold py-4'>My Works</h1>
+            <div className='flex flex-wrap justify-start gap-4 p-8'>
+              {
+
+                portfolio.map(item=><EachPortfolio item={item} />)
+              }
+            </div>
           </div>
           
       </section>

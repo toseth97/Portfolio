@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Typewriter from 'typewriter-effect';
+import BG from "../imgs/BG.jpg"
 
 const Home = () => {
     const [showAbout, setShowAbout] = useState(false)
@@ -15,21 +16,22 @@ const Home = () => {
         <div className='Black_slide bgd'></div>
         <div className='Container Block'>
             <div className='Img_div'>
-                <img className='User_img' src='./tobi_test.png' alt='User' />
+                <img className='User_img' src={BG} alt='User' />
             </div>
             <div className='Content'>
                 <h1 className='Intro_name'>-  i'm tobiloba lawal</h1>
                 <div className='Typewriter'>
                     <Typewriter
                     options={{
-                    strings: ['Front-End Developer', 'Student @ ALX SE', 'Coding Enthusiast'],
+                    strings: ['Full Stack developer', 'Coding Enthusiast'],
                     autoStart: true,
                     loop: true,
                     }}
                 />
                 </div>
                 <p>
-                I'm a Nigerian-based web developer and front‑end engineer focused on creating clean and user‑friendly interfaces, I am enthusiastic about building great programming that improves the lives of everyone around me.
+                I'm a Nigerian-based Fullstack developer focused on creating clean and user‑friendly interfaces and a secure web applications, I am enthusiastic about building great programming that improves the lives of everyone around me.
+                
                 </p>
                 <div className='Btn' onClick={()=>showResume()}>
                     <div className='Flow'></div>
@@ -69,6 +71,8 @@ const Home = () => {
                                 <i className='bx bxl-css3 css Icon_bg' ></i>
                                 <i className='bx bxl-javascript js Icon_bg'></i>
                                 <i className='bx bxl-react react Icon_bg' ></i>
+                                <i class='bx bxl-nodejs node Icon_bg'></i>
+                                <i class='bx bxl-mongodb node Icon_bg' ></i>
                             </div>
                         </div>
                     </div>

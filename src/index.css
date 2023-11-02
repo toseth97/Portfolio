@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
-:root{
+:root {
   --yellow_back: #FFB400;
-  --background:#111111;
-  --black:#030303;
+  --background: #111111;
+  --black: #030303;
 }
 
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -15,26 +15,52 @@
   color: #ffffff;
   transition: .3s ease;
 }
-html, body, #root, .App, .Parent,.Container, .Home_resume{
+
+html,
+body,
+#root,
+.App,
+.Parent,
+.Container,
+.Home_resume {
   width: 100%;
   height: 100vh;
 }
-.Container, .About_page, .Parent, .Content, .App, .Navigation, .Nav_links,.Home_resume,.Resume_main, .Resume_header,.Resume_split, .Contact_parent{
+
+.Container,
+.About_page,
+.Parent,
+.Content,
+.App,
+.Navigation,
+.Nav_links,
+.Home_resume,
+.Resume_main,
+.Resume_header,
+.Resume_split,
+.Contact_parent {
   display: flex;
   align-items: center;
 }
-.App{
+
+.About_page {
+  align-items: flex-start;
+}
+
+.App {
   position: relative;
   justify-content: center;
 }
-.Navigation{
-  position : absolute;
+
+.Navigation {
+  position: absolute;
   justify-content: center;
   height: 50vh;
   z-index: 5;
   right: 1rem;
 }
-.Nav_links{
+
+.Nav_links {
   gap: 10px;
   justify-content: flex-end;
   margin: 2rem 0;
@@ -43,7 +69,8 @@ html, body, #root, .App, .Parent,.Container, .Home_resume{
   overflow: hidden;
   position: relative;
 }
-.Link_desc{
+
+.Link_desc {
   position: absolute;
   padding: .5rem;
   border-radius: 50px;
@@ -56,7 +83,8 @@ html, body, #root, .App, .Parent,.Container, .Home_resume{
   text-align: center;
   transition: .5s ease;
 }
-.Link_icon{
+
+.Link_icon {
   font-size: 1.1rem;
   padding: .5rem;
   z-index: 1;
@@ -66,33 +94,42 @@ html, body, #root, .App, .Parent,.Container, .Home_resume{
   border-radius: 50%;
 }
 
-.Nav_links:hover .Link_desc{
+.Nav_links:hover .Link_desc {
   opacity: 1;
   width: 130px;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.Parent{
+
+.Parent {
   overflow: hidden;
   justify-content: center;
   position: relative;
 }
 
-.bgd{
+.bgd {
   position: absolute;
   width: 100%;
   height: 100vh;
 }
-.Yellow_bg{
+
+.Yellow_bg {
   transform: translateX(-80%) skewX(15deg);
   background-color: var(--yellow_back);
   z-index: 1;
 }
-.Black_bg{
+
+.card_bg {
+  background-color: var(--yellow_back);
+}
+
+.Black_bg {
   background-color: var(--background);
 }
-.Black_slide{
+
+.Black_slide {
   background-color: rgb(34, 34, 34);
   z-index: 3;
   animation: Black_slide .5s ease-out forwards;
@@ -101,12 +138,13 @@ a{
   transform: translateY(10%);
 }
 
-@keyframes Black_slide{
-  100%{
+@keyframes Black_slide {
+  100% {
     transform: translateY(100%);
   }
 }
-.Container{
+
+.Container {
   width: 90%;
   justify-content: space-between;
   height: 95vh;
@@ -118,51 +156,58 @@ a{
 }
 
 @keyframes Slide_up {
-  100%{
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
-  
+
 }
-.Img_div{
+
+.Img_div {
   width: 500px;
   border: 5px solid var(--yellow_back);
   background-color: var(--background);
   border-radius: 50px;
   overflow: hidden;
 }
-.User_img{
-  width:100%;
-  
+
+.User_img {
+  width: 100%;
+  transform: scale(1.1);
   transition: .5s ease;
 }
-.User_img:hover{
-  transform: scale(1.1);
+
+.User_img:hover {
+  transform: scale(1.14);
 }
 
-.Content{
+.Content {
   width: 100%;
   justify-content: center;
   flex-direction: column;
 }
-.Intro_name{
+
+.Intro_name {
   text-transform: uppercase;
   color: var(--yellow_back);
   font-size: 3rem;
   margin-bottom: 1rem;
   /* font-weight: bolder; */
 }
-.Typewriter{
+
+.Typewriter {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bolder;
-  padding:  0 0 .5rem;
+  padding: 0 0 .5rem;
 }
-.Content p{
+
+.Content p {
   width: 60%;
   text-align: center;
 }
-.Btn{
+
+.Btn {
   margin-top: 2rem;
   width: 13rem;
   border: 1px solid var(--yellow_back);
@@ -176,7 +221,7 @@ a{
   position: relative;
 }
 
-.Btn p{
+.Btn p {
   margin-left: 20px;
   z-index: 1;
   outline: none;
@@ -185,7 +230,8 @@ a{
   font-weight: bolder;
   transition: .7s ease;
 }
-.Link{
+
+.Link {
   /* background-color: var(--yellow_back); */
   color: #ffffff;
   padding: .6rem;
@@ -195,7 +241,8 @@ a{
   border-radius: 50%;
   transition: .4s ease;
 }
-.Flow{
+
+.Flow {
   position: absolute;
   right: -20px;
   height: 100px;
@@ -204,17 +251,22 @@ a{
   background-color: var(--yellow_back);
   transition: .4s ease;
 }
-.Btn:hover .Link{
+
+.Btn:hover .Link {
   transform: rotate(720deg);
   color: var(--black);
-  
+
 }
-.Btn:hover .Flow{
+
+.Btn:hover .Flow {
   width: 300px;
-}.Btn:hover>p{
+}
+
+.Btn:hover>p {
   color: var(--black);
 }
-.Home_resume{
+
+.Home_resume {
   justify-content: center;
   flex-direction: column;
   position: absolute;
@@ -224,14 +276,16 @@ a{
   transition: .5s ease;
   transform: translateY(30px);
   width: 100%;
-  
+
 }
-.Home_resume.active{
+
+.Home_resume.active {
   opacity: 1;
   z-index: 9;
   transform: translateY(0);
 }
-.Resume_main{
+
+.Resume_main {
   justify-content: center;
   flex-direction: column;
   background-color: var(--background);
@@ -241,17 +295,18 @@ a{
   position: relative;
 }
 
-.Resume_header{
+.Resume_header {
   position: relative;
   padding: 1rem;
   width: 100%;
   justify-content: center;
 }
-.close{
+
+.close {
   position: absolute;
   font-size: 2rem;
   right: -30px;
-  top:-30px;
+  top: -30px;
   padding: .3rem;
   background-color: var(--yellow_back);
   border-radius: 50%;
@@ -259,44 +314,53 @@ a{
   cursor: pointer;
   transition: all .5s ease
 }
-.close:hover{
+
+.close:hover {
   transform: rotate(180deg) scale(1.05);
 }
-.Resume_header div{
+
+.Resume_header div {
   position: absolute;
   font-size: 5rem;
   font-weight: bolder;
   color: #ffffff2e;
 }
-.Resume_header h1{
+
+.Resume_header h1 {
   font-size: 2.5rem;
 }
-.Resume_split{
+
+.Resume_split {
   width: 90%;
   align-items: flex-start;
   justify-content: space-between;
   padding: 1rem 0;
 }
-.title{
+
+.title {
   color: #c7c7c7b8;
   margin: .2rem 0;
   font-weight: bold;
   font-size: .8rem;
 }
-.title span{
+
+.title span {
   margin-left: 10px;
 }
-.split h3{
+
+.split h3 {
   font-size: 1.4rem;
   margin: 1rem 0;
 }
-.Skills_info{
+
+.Skills_info {
   text-align: center;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.Icon_bg{
+
+.Icon_bg {
   padding: .5rem;
   font-size: 3rem;
   color: var(--black);
@@ -305,52 +369,65 @@ a{
   border-radius: 20px;
   transition: .5s ease;
 }
-.html:hover{
+
+.html:hover {
   color: rgb(195, 87, 87);
 }
-.css:hover{
-  color:#255692;
+
+.node:hover {
+  color: rgb(37, 158, 39);
 }
-.js:hover{
+
+.css:hover {
+  color: #255692;
+}
+
+.js:hover {
   color: rgb(203, 170, 60);
 }
-.react:hover{
+
+.react:hover {
   color: rgb(87, 190, 195);
 }
 
 
 /* ABout Page */
-.About_page{
+.About_page {
   z-index: 7;
   width: 100%;
   height: 100vh;
-  
+
 }
 
-.About_sub{
+.About_sub {
   width: 90%;
 }
-.About_Container{
+
+.About_Container {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.Download{
+
+.Download {
   width: 250px;
 }
-.text_color{
+
+.text_color {
   color: var(--yellow_back);
 }
-.Split_two p{
+
+.Split_two p {
   font-size: .8rem;
 }
 
 
 
 /* Portfolio */
-.Portfolio_split{
+.Portfolio_split {
   width: 100%;
 }
-.All_portfolio{
+
+.All_portfolio {
   display: flex;
   align-items: center;
   flex-basis: content;
@@ -360,23 +437,27 @@ a{
   flex-wrap: wrap;
   padding: 2rem 0;
 }
-.Each_portfolio{
+
+.Each_portfolio {
   position: relative;
   width: 250px;
   border-radius: 10px;
   overflow: hidden;
 }
-.Portfolio_img{
+
+.Portfolio_img {
   width: 100%;
-  
+
 }
-.Img_shade{
+
+.Img_shade {
   width: 600%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.377);
   height: 300px;
 }
-.Portfolio_desc{
+
+.Portfolio_desc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,22 +476,26 @@ a{
   z-index: 2;
 }
 
-.Each_portfolio:hover .Portfolio_desc , .Each_portfolio:focus .Portfolio_desc{
+.Each_portfolio:hover .Portfolio_desc,
+.Each_portfolio:focus .Portfolio_desc {
   bottom: 0;
   opacity: 1;
 }
-.Each_portfolio:hover>.Img_shade{
+
+.Each_portfolio:hover>.Img_shade {
   background-color: #000000e8;
 }
 
-.Portfolio_desc h1{
+.Portfolio_desc h1 {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-.Portfolio_desc em{
+
+.Portfolio_desc em {
   font-size: .7rem;
 }
-.Portfolio_desc a{
+
+.Portfolio_desc a {
   padding: .1rem 2rem;
   margin-top: 1rem;
   font-size: .8rem;
@@ -422,7 +507,7 @@ a{
 /* CONTACT */
 
 
-.Contact_parent{
+.Contact_parent {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -431,7 +516,9 @@ a{
   overflow: hidden;
   padding: 7rem 0 0;
 }
-.Contact_container, .Contact_body{
+
+.Contact_container,
+.Contact_body {
   width: 100%;
   height: 100%;
   display: flex;
@@ -439,38 +526,46 @@ a{
   justify-content: space-between;
   gap: 1rem;
 }
-.Contact_container{
+
+.Contact_container {
   width: 70%;
   flex-direction: column;
   justify-content: center;
   transform: translateY(10%);
   animation: Slide_up .5s ease-in-out forwards;
   animation-delay: .2s;
-  
+
 }
-.Contact_body{
+
+.Contact_body {
   gap: 1rem;
   margin-top: 1rem;
 }
-.Contact_info{
+
+.Contact_info {
   width: 70%;
 }
-.Contact_mail{
+
+.Contact_mail {
   width: 100%;
 }
-.Contact_info h1{
+
+.Contact_info h1 {
   font-size: 1.5rem;
 }
-.Contact_info p{
+
+.Contact_info p {
   margin: .5rem 0;
   font-size: .8rem;
 }
-.Mobile_info{
+
+.Mobile_info {
   display: flex;
   align-items: center;
   margin: 1rem 0;
 }
-.info_icon{
+
+.info_icon {
   font-size: 1rem;
   padding: .5rem;
   border-radius: 50%;
@@ -478,16 +573,20 @@ a{
   background-color: var(--yellow_back);
   margin-right: 1rem;
 }
-.Mobile_info div h4{
+
+.Mobile_info div h4 {
   font-size: .9rem;
 }
-.Mobile_info div em{
+
+.Mobile_info div em {
   font-size: .8rem;
 }
-.Social_links{
+
+.Social_links {
   margin-top: .5rem;
 }
-.social{
+
+.social {
   font-size: 1.2rem;
   padding: .3rem;
   margin-right: 1rem;
@@ -495,65 +594,75 @@ a{
   color: var(--yellow_back);
   background-color: #ffffff0e;
 }
-.social:hover{
+
+.social:hover {
   transform: translateY(-5px);
 }
-.Input_div{
+
+.Input_div {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   margin: .5rem 0;
 }
-.Input_div label{
+
+.Input_div label {
   position: absolute;
   left: 99999999px;
   opacity: .7;
 }
-.Input_div input, .Input_div textarea{
+
+.Input_div input,
+.Input_div textarea {
   width: 100%;
   height: 30px;
   border: none;
   outline: none;
   border-radius: 20px;
-  padding: .3rem 2rem ;
+  padding: .3rem 2rem;
   font-size: .8rem;
   background-color: #ffffff1b;
 }
 
-.textarea, .textarea textarea{
+.textarea,
+.textarea textarea {
   height: 10rem;
 }
-.Form_div{
+
+.Form_div {
   gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.Send{
+
+.Send {
   background-color: transparent;
 }
 
 
 
 @media screen and (max-width:990px) {
-  .Intro_name{
+  .Intro_name {
     font-size: 2rem;
 
   }
-  .Typewriter{
+
+  .Typewriter {
     font-size: 1.6rem;
     padding: .1rem 0;
   }
-  .Content p{
+
+  .Content p {
     width: 60%;
-    
+
   }
 }
 
 @media screen and (max-width:800px) {
-  .Navigation{
-    position : absolute;
+  .Navigation {
+    position: absolute;
     justify-content: center;
     height: 50px;
     width: 100%;
@@ -562,13 +671,15 @@ a{
     background-color: #57575781;
     backdrop-filter: blur(10px);
   }
-  .Navigation_list{
+
+  .Navigation_list {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  .Nav_links{
+
+  .Nav_links {
     gap: 10px;
     justify-content: center;
     margin: 0;
@@ -577,10 +688,12 @@ a{
     overflow: hidden;
     position: relative;
   }
-  .Link_desc{
+
+  .Link_desc {
     display: none;
   }
-  .Link_icon{
+
+  .Link_icon {
     font-size: 1.5rem;
     padding: .8rem;
     z-index: 1;
@@ -589,95 +702,112 @@ a{
     color: #ffffff;
     border-radius: 50%;
   }
-  
-  .Container{
+
+  .Container {
     width: 100%;
     height: 100dvh;
     gap: .3rem;
   }
-  .Yellow_bg{
+
+  .Yellow_bg {
     display: none;
   }
-  .Block{
+
+  .Block {
     justify-content: center;
     flex-direction: column;
   }
 
-  .Img_div{
+  .Img_div {
     border-radius: 50%;
-    width:250px;
+    width: 250px;
     height: 250px;
-    
+
     border: 2px solid var(--yellow_back);
   }
-  .User_img{
+
+  .User_img {
     border-radius: 50%;
-    
+
   }
-  .Resume_header div{
+
+  .Resume_header div {
     font-size: 4.5rem;
 
   }
-  .Resume_header h1{
+
+  .Resume_header h1 {
     font-size: 2rem;
   }
-  .Resume_split{
+
+  .Resume_split {
     width: 100%;
     flex-direction: column;
     padding: 1rem 0;
   }
-  .title{
+
+  .title {
     font-size: .8rem;
   }
-  .title span{
+
+  .title span {
     margin-left: 10px;
   }
-  .split h3{
+
+  .split h3 {
     font-size: 1.5rem;
     margin: .5rem 0;
   }
-  .Skills_info{
+
+  .Skills_info {
     text-align: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .Icon_bg{
+  .Icon_bg {
     font-size: 3rem;
     margin: .5rem;
   }
-  .Content p{
+
+  .Content p {
     width: 80%;
     text-align: center;
   }
-  .Btn{
+
+  .Btn {
     margin-top: 2rem;
   }
-  .Btn p{
+
+  .Btn p {
     margin-left: 0;
   }
-  .Each_portfolio{
-    width: 90%;  
+
+  .Each_portfolio {
+    width: 90%;
     margin: .5rem 0;
   }
-  .Portfolio_img{
+
+  .Portfolio_img {
     height: 150px;
   }
-  .Img_shade{
+
+  .Img_shade {
     width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.377);
     height: 300px;
   }
-  .Portfolio_desc{
+
+  .Portfolio_desc {
     bottom: -200%;
     opacity: 1;
     width: 100%;
     text-align: center;
   }
-  
-  .All_portfolio{
+
+  .All_portfolio {
     display: flex;
     align-items: center;
     flex-basis: content;
@@ -687,45 +817,56 @@ a{
     flex-direction: column;
     flex-wrap: none;
   }
-  .Contact_parent{
+
+  .Contact_parent {
     padding: 0;
   }
-  .Contact_container{
+
+  .Contact_container {
     width: 95%;
     padding-top: 8rem;
     overflow: scroll;
   }
-  .Contact_body{
+
+  .Contact_body {
     flex-direction: column;
     width: 100%;
     gap: 10px;
   }
-  .Contact_info, .Contact_mail{
+
+  .Contact_info,
+  .Contact_mail {
     width: 100%;
   }
-  .Contact_info h1{
+
+  .Contact_info h1 {
     text-align: center;
   }
-  .info_icon{
+
+  .info_icon {
     font-size: 1.5rem;
   }
-  .Social_links{
+
+  .Social_links {
     display: flex;
     width: 100%;
     justify-content: center;
   }
-  .contact_section{
+
+  .contact_section {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0 2rem 0 ;
+    padding: 0 2rem 0;
     flex-direction: column;
   }
-  .Form_div{
+
+  .Form_div {
     flex-direction: column;
     gap: 0;
   }
-  form{
+
+  form {
     padding-bottom: 3rem;
   }
 
@@ -739,78 +880,93 @@ a{
 
 
 @media screen and (max-width:550px) {
-  .Parent{
+  .Parent {
     align-items: flex-start;
   }
-  .Resume_main{
+
+  .Resume_main {
     width: 95%;
     justify-content: center;
   }
-  .Resume_split{
+
+  .Resume_split {
     justify-content: center;
     align-items: center;
     width: 90%;
 
   }
-  .Personal_info{
+
+  .Personal_info {
     width: 90%;
 
     flex-direction: column;
   }
-  .split{
+
+  .split {
     width: 100%;
   }
-  .close{
+
+  .close {
     position: absolute;
     font-size: 2rem;
     right: 30px;
-    top:30px;
+    top: 30px;
     z-index: 4;
   }
-  .Content p{
+
+  .Content p {
     width: 90%;
   }
-  .Link_icon:hover{
+
+  .Link_icon:hover {
     transform: scale(1.7);
   }
-  .About_Container{
+
+  .About_Container {
     overflow-y: scroll;
   }
-  .About_page{
+
+  .About_page {
     z-index: 7;
     width: 100%;
-    padding: 10rem 0 0;
+    padding: 2rem 0 0 0;
     height: 100dvh;
   }
-  .Download{
+
+  .Download {
     width: 230px;
     margin-bottom: 4rem;
   }
-  .Download p{
+
+  .Download p {
     margin-left: 20px;
   }
-  .Portfolio_desc h1{
+
+  .Portfolio_desc h1 {
     margin-bottom: .5rem;
     font-size: 1rem;
   }
-  .Portfolio_desc em{
+
+  .Portfolio_desc em {
     font-size: .8rem;
   }
-  .Portfolio_desc a{
+
+  .Portfolio_desc a {
     padding: .2rem 2rem;
     margin-top: .5rem;
     background-color: var(--yellow_back);
     border-radius: 10px;
-    
+
   }
 }
-@media screen and (max-width:380px){
-  .Img_div{
-    width:200px;
+
+@media screen and (max-width:380px) {
+  .Img_div {
+    width: 200px;
     height: 200px;
   }
 
-  .About_sub{
+  .About_sub {
     width: 100%;
   }
 }
