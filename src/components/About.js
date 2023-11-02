@@ -43,17 +43,17 @@ const About = () => {
                                 <h3>Education</h3>
                                 <div>
                                     <div>
-                                    <h5>Bachelor Degree - University of Ibadan - 2026</h5>
+                                    <h5 className='font-bold'>Bachelor Degree - University of Ibadan - 2026</h5>
                                     <p className='text-xs'>Computer Science <em>(Currently running the program)</em></p>
 
                                     </div>
 
                                     <div className='text-start my-2'>
-                            <h5 className='text-start'>Google IT Support Specialist Certification - 2021</h5>
+                            <h5 className='font-bold'>Google IT Support Specialist Certification - 2021</h5>
                                 <p className='text-start'>Google / Coursera </p>
                             </div>
                             <div>
-                            <h5>Javascript Datastructure and Algorithm - 2021</h5>
+                            <h5 className='font-bold'>Javascript Datastructure and Algorithm - 2021</h5>
                                 <p className='text-xs'>Freecodecamp</p>
                             </div>
                                     
