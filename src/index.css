@@ -122,7 +122,9 @@ a {
 }
 
 .card_bg {
-  background-color: var(--yellow_back);
+  border: 5px solid var(--yellow_back);
+  color: var(--yellow_back);
+  background-color: transparent;
 }
 
 .Black_bg {
